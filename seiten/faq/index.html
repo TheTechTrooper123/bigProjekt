@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="../../../dashboard\styles.css" />
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Tills Seite</title>
+    <style>
+        footer {
+            background: #24292e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1.1em;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            h2 {
+                font-size: 1.7em;
+            }
+
+            .cta a {
+                padding: 12px 25px;
+                font-size: 1.1em;
+            }
+        }
+
+        /* Further responsiveness for very small screens (e.g., mobile phones) */
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .section p {
+                font-size: 1em;
+            }
+
+            .cta a {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                display: block;
+            }
+
+            .container div {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Normaler Footer, der auf Desktop und Tablets standardmäßig nicht sichtbar ist */
+        footer {
+            display: none;
+            background-color: #24292e;
+            color: white;
+            text-align: center;
+            padding: 0px;
+            height: 200px;
+            /* Feste Höhe von 20px */
+            line-height: 20px;
+            /* Vertikale Zentrierung des Textes */
+        }
+
+        /* Medienabfrage für Handys: Footer wird nur auf Bildschirmen mit max. 768px Breite angezeigt */
+        @media (max-width: 768px) {
+            footer {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body id="body">
+    <div class="container">
+        <main>
+            <div class="main__container">
+                <h1 class="title">Häufige Fragen</h1>
+                <div class="accordion">
+
+                    <div class="item">
+                        <p class="number">01</p>
+                        <p class="text">Welche⁤ Programmiersprache führt aktuell die Ranglisten an?</p>
+                        <button class="btn btn-01 "><svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg></button>
+                        <div class="hidden-box">
+                            <p>
+                                Laut den meisten ⁣Indizes und Umfragen, wie dem TIOBE⁢ Index ​oder der Stack Overflow
+                                Developer Survey, bleibt Java eine der führenden Programmiersprachen, dicht gefolgt von
+                                Python,⁤ das ⁤aufgrund seiner Einfachheit und Vielseitigkeit immer⁤ beliebter wird.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <p class="number">02</p>
+                        <p class="text">Gibt es eine Programmiersprache, die besonders schnell wächst?</p>
+                        <button class="btn btn-02"><svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="hidden-box">
+                            <p>
+                                Python​ erlebt⁣ ein rasantes Wachstum und ⁢wird in⁤ verschiedenen Bereichen wie
+                                Webentwicklung, Datenanalyse, künstliche Intelligenz und maschinelles Lernen‍ immer
+                                häufiger ​eingesetzt. Auch TypeScript gewinnt ⁤an Popularität, da es Entwicklern
+                                ermöglicht, größere und komplexere JavaScript-Anwendungen zu schreiben.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <p class="number">03</p>
+                        <p class="text">Welche ‌Programmiersprache wird am häufigsten ​von Anfängern gelernt?</p>
+                        <button class="btn btn-03"><svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="hidden-box">
+                            <p>
+                                Python ⁤gilt als eine der​ einsteigerfreundlichsten Sprachen ⁢und wird ‌oft als ⁤erste⁤
+                                Programmiersprache ⁣in der Ausbildung verwendet. Seine klare Syntax und⁢ Lesbarkeit
+                                machen⁢ es zu einer idealen Wahl‍ für Anfänger.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <p class="number">04</p>
+                        <p class="text">Wie beeinflusst die ‌Popularität einer Programmiersprache die Jobaussichten?</p>
+                        <button class="btn btn-01 "><svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg></button>
+                        <div class="hidden-box">
+                            <p>
+                                Die Nachfrage nach Entwicklern, die sich⁢ mit ⁤beliebten Sprachen wie Java,‌ Python und​
+                                JavaScript‍ auskennen, ist ‍hoch. Kenntnisse in diesen Sprachen können die Jobchancen
+                                erheblich verbessern, da sie in ‌vielen ⁢Branchen‍ und bei einer Vielzahl von Projekten
+                                eingesetzt werden.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <p class="number">05</p>
+                        <p class="text">Welche Programmiersprache wird in der Industrie am meisten verwendet?</p>
+                        <button class="btn btn-01 "><svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg></button>
+                        <div class="hidden-box">
+                            <p>
+                                Java und C# sind in der Unternehmenswelt weit verbreitet, insbesondere für
+                                ‌Backend-Systeme und ‌Unternehmensanwendungen. JavaScript und seine Frameworks
+                                dominieren die Frontend-Entwicklung⁢ im Web.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <p class="number">06</p>
+                        <p class="text">Gibt es eine‌ Tendenz zu funktionalen oder objektorientierten
+                            Programmiersprachen?</p>
+                        <button class="btn btn-01 "><svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg></button>
+                        <div class="hidden-box">
+                            <p>
+                                Objektorientierte Sprachen⁤ wie Java und C++ bleiben in der Industrie dominant, aber
+                                funktionale Programmiersprachen wie Scala​ und Haskell gewinnen an⁣ Bedeutung,
+                                insbesondere in Bereichen, ‍die eine hohe Zuverlässigkeit und Skalierbarkeit
+                                erfordern.m:
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <p class="number">07</p>
+                        <p class="text">Wie sieht die Zukunft der Programmiersprachen aus?</p>
+                        <button class="btn btn-01 "><svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg></button>
+                        <div class="hidden-box">
+                            <p>
+                                Es wird erwartet, dass⁢ Sprachen, die einfache Syntax mit leistungsstarken Funktionen
+                                kombinieren,⁣ weiterhin an ‍Beliebtheit⁤ gewinnen werden. Zudem ⁣wird die⁢ Integration
+                                von ​KI-Fähigkeiten in Programmiersprachen wahrscheinlich ​eine größere​ Rolle spielen.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <p class="number">08</p>
+                        <p class="text">Welche Rolle spielen Open-Source-Programmiersprachen?</p>
+                        <button class="btn btn-01 "><svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg></button>
+                        <div class="hidden-box">
+                            <p>
+                                Open-Source-Sprachen wie Python und Ruby genießen eine große‌ und aktive Community, die
+                                zur ständigen Verbesserung und Erweiterung der Sprachen beiträgt. Diese Gemeinschaften
+                                sind ein wichtiger Faktor für die Langlebigkeit und Popularität einer Sprache.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <p class="number">09</p>
+                        <p class="text">Wie beeinflussen mobile Plattformen die Programmiersprachen-Statistik?</p>
+                        <button class="btn btn-01 "><svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg></button>
+                        <div class="hidden-box">
+                            <p>
+                                Mit dem anhaltenden Wachstum des mobilen ⁢Marktes ‍steigt auch die Nachfrage nach
+                                Sprachen, die für ⁢die mobile Entwicklung optimiert⁢ sind, wie Swift‌ für ​iOS und
+                                Kotlin für Android.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <p class="number">10</p>
+                        <p class="text">⁣Welche Ressourcen stehen zur⁤ Verfügung, um die⁤ neuesten⁤ Trends⁤ in​
+                            Programmiersprachen zu verfolgen?</p>
+                        <button class="btn btn-01 "><svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg></button>
+                        <div class="hidden-box">
+                            <p>
+                                Online-Plattformen wie‌ GitHub oder Stack Overflow bieten Einblicke in die‍ Beliebtheit⁣
+                                von Programmiersprachen. Zudem sind regelmäßig ⁣aktualisierte Indizes wie der TIOBE
+                                Index und Berichte wie der “State of the Developer Ecosystem” von JetBrains nützliche
+                                Ressourcen.
+                            </p>
+                        </div>
+                    </div>
+                    <p class="rodape"> Design: Desenvolvido por Sinayder 2022.</p>
+                </div>
+            </div>
+        </main>
+        <!-- SIDEBAR STARTS HERE -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar__container">
+                <div class="sidebar__user">
+                    <div class="sidebar__img">
+                        <img src="../../../dashboard/assets/img/perfil.png" alt="image">
+                    </div>
+
+                    <div class="sidebar__info">
+                        <h3>User</h3>
+                        <span>User@email.com</span>
+                    </div>
+                </div>
+
+                <div class="sidebar__content">
+                    <div>
+                        <h3 class="sidebar__title">Sidebar</h3>
+
+                        <div class="sidebar__list">
+                            <a href="../../../dashboard/index.html" class="sidebar__link">
+                                <i class="ri-pie-chart-2-fill"></i>
+                                <span>Dashboard</span>
+                            </a>
+
+                            <a href="../github/index.html" class="sidebar__link">
+                                <i class="ri-wallet-3-fill"></i>
+                                <span>Github</span>
+                            </a>
+
+                            <a href="#" class="sidebar__link active-link">
+                                <i class="ri-calendar-fill"></i>
+                                <span>FAQ</span>
+                            </a>
+
+                            <a href="../welcheprogrammiersprache/index.html" class="sidebar__link">
+                                <i class="ri-arrow-up-down-line"></i>
+                                <span>Programmiersprachen Überblick</span>
+                            </a>
+
+                            <a href="../../portfolio/index.html" class="sidebar__link">
+                                <i class="ri-arrow-up-down-line"></i>
+                                <span>Mein Portfolio</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar__actions">
+                        <button class="sidebar__link">
+                            <span>&copy; Till Siskos</span>
+                        </button>
+                    </div>
+                </div>
+        </nav>
+        <!-- Footer, der nur auf mobilen Geräten sichtbar ist -->
+        <footer>
+            <div class="sidebar__list">
+                <a href="#" class="sidebar__link">
+                    <i class="ri-pie-chart-2-fill"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="../github/index.html" class="sidebar__link">
+                    <i class="ri-wallet-3-fill"></i>
+                    <span>Github</span>
+                </a>
+
+                <a href="../faq/index.html" class="sidebar__link active-link">
+                    <i class="ri-calendar-fill"></i>
+                    <span>FAQ</span>
+                </a>
+
+                <a href="../welcheprogrammiersprache/index.html" class="sidebar__link">
+                    <i class="ri-arrow-up-down-line"></i>
+                    <span>Programmiersprachen Überblick</span>
+                </a>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <script src="script.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="scripts.js"></script>
+</body>
+
+</html>

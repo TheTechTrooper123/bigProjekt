@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Tills Seite</title>
+  <style>
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #0366d6;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section p {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      font-size: 1.1em;
+      margin-bottom: 8px;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .cta a {
+      text-decoration: none;
+      background: #0366d6;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 5px;
+      font-size: 1.2em;
+    }
+
+    footer {
+      background: #24292e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      header p {
+        font-size: 1.1em;
+      }
+
+      .container {
+        padding: 0 15px;
+      }
+
+      h2 {
+        font-size: 1.7em;
+      }
+
+      .cta a {
+        padding: 12px 25px;
+        font-size: 1.1em;
+      }
+    }
+
+    /* Further responsiveness for very small screens (e.g., mobile phones) */
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      header p {
+        font-size: 1em;
+      }
+
+      .section p {
+        font-size: 1em;
+      }
+
+      .cta a {
+        padding: 10px 20px;
+        font-size: 1em;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        display: block;
+      }
+
+      .container div {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+
+    /* Normaler Footer, der auf Desktop und Tablets standardmäßig nicht sichtbar ist */
+    footer {
+      display: none;
+      background-color: #24292e;
+      color: white;
+      text-align: center;
+      padding: 0px;
+      height: 200px;
+      /* Feste Höhe von 20px */
+      line-height: 20px;
+      /* Vertikale Zentrierung des Textes */
+    }
+
+    /* Medienabfrage für Handys: Footer wird nur auf Bildschirmen mit max. 768px Breite angezeigt */
+    @media (max-width: 768px) {
+      footer {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body id="body">
+  <div class="container">
+
+
+
+    <main>
+      <div class="main__container">
+        <!-- MAIN TITLE STARTS HERE -->
+
+        <div class="main__title">
+          <img src="assets/hello.svg" alt="" />
+          <div class="main__greeting">
+            <h1>Hallo!</h1>
+            <p>Willkommn zu den neusten Programmiertrends und Statistiken</p>
+          </div>
+        </div>
+
+        <!-- MAIN TITLE ENDS HERE -->
+        <!-- CHARTS STARTS HERE -->
+        <div class="charts">
+          <div class="charts__left">
+            <div class="charts__left__title">
+              <div>
+                <h1>Statistik</h1>
+              </div>
+            </div>
+            <div id="apex1"></div>
+          </div>
+
+          <div class="charts__right">
+            <div class="charts__right__title">
+              <div>
+                <h1>Repository Management Systeme</h1>
+                <p>Marktanteile</p>
+              </div>
+            </div>
+
+            <div class="charts__right__cards">
+              <div class="card1">
+                <h1>Github</h1>
+                <p>56%</p>
+              </div>
+
+              <div class="card2">
+                <h1>Bitbucket</h1>
+                <p>30%</p>
+              </div>
+
+              <div class="card3">
+                <h1>GitLab</h1>
+                <p>9%</p>
+              </div>
+
+              <div class="card4">
+                <h1>Gitea</h1>
+                <p>2%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CHARTS ENDS HERE -->
+        <!-- Texts -->
+        <div class="section1">
+          <h2>Was erwartet dich hier?</h2>
+          <p>Hier ist mehr als nur eine Webseite. Wir sind eine umfassende Plattform, die dir wertvolle
+            Einblicke in die Welt von Programmierung un Github... bietet. Hier kannst du aktuelle Statistiken, die
+            beliebtesten Trends und
+            umfassende bald auch Tutorials finden, die dir helfen, alles zu meistern. Egal, ob du ein Anfänger bist,
+            oder ein erfahrener Entwickler. Ich biete dir die Informationen, die du brauchst.</p>
+        </div>
+
+        <div class="section">
+          <h2>Detaillierte GitHub-Statistiken</h2>
+          <p>Mit unseren interaktiven Dashboards kannst du aktuelle Daten und spannende Trends aus der GitHub-Welt
+            entdecken. Hier erhältst du umfassende Einblicke in:</p>
+          <ul>
+            <li><strong>Die beliebtesten Programmiersprachen</strong> auf GitHub – Welches sind die am häufigsten
+              verwendeten Sprachen?</li>
+            <li><strong>Die Anzahl der aktiven Repositories</strong> weltweit – Wie viele Repositories gibt es und
+              welche sind die aktivsten?</li>
+            <li><strong>Die am schnellsten wachsenden Projekte</strong> und Communities – Welche Projekte sind auf dem
+              Vormarsch?</li>
+          </ul>
+          <p>Unsere Visualisierungen sind nicht nur informativ, sondern auch interaktiv. Du kannst die Daten nach
+            deinem Geschmack anpassen und die neuesten Entwicklungen direkt verfolgen.</p>
+        </div>
+
+        <div class="section">
+          <h2>Häufig gestellte Fragen (FAQ)</h2>
+          <p>Du hast Fragen zu GitHub? Kein Problem! In unserem FAQ-Bereich findest du leicht verständliche Antworten
+            auf die wichtigsten Fragen, die sowohl Anfängern als auch Fortgeschrittenen helfen:</p>
+          <ul>
+            <li><strong>Welche⁤ Programmiersprache führt aktuell die Ranglisten an?</strong></li>
+            <li><strong>
+                Gibt es eine Programmiersprache, die besonders schnell wächst?</strong></li>
+            <li><strong>Welche ‌Programmiersprache wird am häufigsten ​von Anfängern gelernt?</strong></li>
+          </ul>
+          <p>Unsere FAQ-Seite wird regelmäßig aktualisiert, sodass du immer auf dem neuesten Stand bleibst.</p>
+        </div>
+
+        <div class="section">
+          <h2>Unsere baldigen Tutorials</h2>
+          <p>GitHub ist eine mächtige Plattform, die viele Tools und Funktionen bietet, die dir helfen können, deine
+            Projekte effizient zu verwalten. In unserem Tutorials-Bereich lernst du Schritt für Schritt, wie du die
+            wichtigsten Funktionen von GitHub nutzt:</p>
+          <ul>
+            <li><strong>Verwalte Issues</strong> und behebe Fehler effizient.</li>
+            <li><strong>Automatisiere Workflows</strong> mit GitHub Actions, um wiederkehrende Aufgaben zu
+              erleichtern.</li>
+            <li><strong>Teile deine Arbeit</strong> und kollaboriere mit anderen Entwicklern weltweit.</li>
+          </ul>
+          <p>Unsere Tutorials sind so gestaltet, dass du selbst komplexe Prozesse einfach nachvollziehen kannst, um
+            GitHub optimal für deine Projekte zu nutzen.</p>
+        </div>
+        <div class="section">
+          <h2>Unsere Mission</h2>
+          <p>GitHub ist die größte Plattform für Entwickler weltweit, und wir glauben, dass jeder die Möglichkeit
+            haben sollte, die Möglichkeiten von GitHub voll auszuschöpfen. Unsere Mission ist es, Wissen zugänglich
+            und verständlich zu machen, damit mehr Menschen von den unendlichen Möglichkeiten profitieren können, die
+            GitHub bietet. Wir möchten, dass du dich sicher und selbstbewusst fühlst, wenn du GitHub verwendest, und
+            dir helfen, deine Projekte auf das nächste Level zu heben.</p>
+        </div>
+
+    </main>
+    <!-- SIDEBAR STARTS HERE -->
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar__container">
+        <div class="sidebar__user">
+          <div class="sidebar__img">
+            <img src="assets/img/perfil.png" alt="image">
+          </div>
+
+          <div class="sidebar__info">
+            <h3>User</h3>
+            <span>User@email.com</span>
+          </div>
+        </div>
+
+        <div class="sidebar__content">
+          <div>
+            <h3 class="sidebar__title">Sidebar</h3>
+
+            <div class="sidebar__list">
+              <a href="#" class="sidebar__link active-link">
+                <i class="ri-pie-chart-2-fill"></i>
+                <span>Dashboard</span>
+              </a>
+
+              <a href="seiten/github/index.html" class="sidebar__link">
+                <i class="ri-wallet-3-fill"></i>
+                <span>Github</span>
+              </a>
+
+              <a href="seiten/faq/index.html" class="sidebar__link">
+                <i class="ri-calendar-fill"></i>
+                <span>FAQ</span>
+              </a>
+
+              <a href="seiten/welcheprogrammiersprache/index.html" class="sidebar__link">
+                <i class="ri-arrow-up-down-line"></i>
+                <span>Programmiersprachen Überblick</span>
+              </a>
+
+              <a href="portfolio/index.html" class="sidebar__link">
+                <i class="ri-arrow-up-down-line"></i>
+                <span>Mein Portfolio</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar__actions">
+          <button class="sidebar__link">
+            <span>&copy; Till Siskos</span>
+          </button>
+        </div>
+    </nav>
+
+    <!-- Footer, der nur auf mobilen Geräten sichtbar ist -->
+    <footer>
+      <div class="sidebar__list">
+        <a href="#" class="sidebar__link active-link">
+          <i class="ri-pie-chart-2-fill"></i>
+          <span>Dashboard</span>
+        </a>
+
+        <a href="seiten/github/index.html" class="sidebar__link">
+          <i class="ri-wallet-3-fill"></i>
+          <span>Github</span>
+        </a>
+
+        <a href="seiten/faq/index.html" class="sidebar__link">
+          <i class="ri-calendar-fill"></i>
+          <span>FAQ</span>
+        </a>
+
+        <a href="seiten/welcheprogrammiersprache/index.html" class="sidebar__link">
+          <i class="ri-arrow-up-down-line"></i>
+          <span>Programmiersprachen Überblick</span>
+        </a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="script.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

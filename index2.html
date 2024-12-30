@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        canvas {
+            max-width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Programmiertrends</h1>
+    <canvas id="languageChart"></canvas>
+    <script>
+        const ctx = document.getElementById('languageChart').getContext('2d');
+        const data = {
+            labels: ['JavaScript', 'Python', 'Java', 'C#', 'PHP'],
+            datasets: [{
+                label: 'Repositories (in Millionen)',
+                data: [14.5, 12.3, 10.1, 8.4, 6.2],
+                backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF'],
+            }]
+        };
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: data,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'top' }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="../../../dashboard\styles.css" />
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <title>Tills Seite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .language {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        .language:last-child {
+            border-bottom: none;
+        }
+
+        .language h2 {
+            margin: 0 0 10px;
+            font-size: 1.5em;
+            color: #555;
+        }
+
+        .language p {
+            margin: 0;
+        }
+
+        footer {
+            background: #24292e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1.1em;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            h2 {
+                font-size: 1.7em;
+            }
+
+            .cta a {
+                padding: 12px 25px;
+                font-size: 1.1em;
+            }
+        }
+
+        /* Further responsiveness for very small screens (e.g., mobile phones) */
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .section p {
+                font-size: 1em;
+            }
+
+            .cta a {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                display: block;
+            }
+
+            .container div {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Normaler Footer, der auf Desktop und Tablets standardmäßig nicht sichtbar ist */
+        footer {
+            display: none;
+            background-color: #24292e;
+            color: white;
+            text-align: center;
+            padding: 0px;
+            height: 200px;
+            /* Feste Höhe von 20px */
+            line-height: 20px;
+            /* Vertikale Zentrierung des Textes */
+        }
+
+        /* Medienabfrage für Handys: Footer wird nur auf Bildschirmen mit max. 768px Breite angezeigt */
+        @media (max-width: 768px) {
+            footer {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body id="body">
+    <div class="container">
+
+
+
+        <main>
+            <h1>Alle (relevanten) Programmiersprachen im Überblick</h1>
+            <div class="language">
+                <h2>Python</h2>
+                <p>Eine vielseitige, einfach zu lernende Sprache, die oft für Webentwicklung, Datenanalyse, künstliche
+                    Intelligenz und vieles mehr verwendet wird.</p>
+            </div>
+            <div class="language">
+                <h2>JavaScript</h2>
+                <p>Eine der wichtigsten Sprachen für die Webentwicklung, die interaktive Webseiten ermöglicht.</p>
+            </div>
+            <div class="language">
+                <h2>Java</h2>
+                <p>Eine plattformunabhängige Sprache, die häufig für Unternehmensanwendungen und Android-Entwicklung
+                    genutzt
+                    wird.</p>
+            </div>
+            <div class="language">
+                <h2>C++</h2>
+                <p>Eine leistungsstarke Sprache, die oft in der Systemprogrammierung, Spieleentwicklung und für
+                    High-Performance-Anwendungen verwendet wird.</p>
+            </div>
+            <div class="language">
+                <h2>Ruby</h2>
+                <p>Eine dynamische Sprache, die für ihre Einfachheit und Eleganz bekannt ist, besonders beliebt im
+                    Bereich
+                    Webentwicklung.</p>
+            </div>
+            <div class="language">
+                <h2>Go</h2>
+                <p>Eine moderne, effiziente Sprache, die von Google entwickelt wurde und sich hervorragend für
+                    Netzwerkanwendungen und verteilte Systeme eignet.</p>
+            </div>
+            <div class="language">
+                <h2>Rust</h2>
+                <p>Eine sichere und effiziente Sprache, die oft in Systemprogrammierung und eingebetteten Systemen
+                    verwendet
+                    wird.</p>
+            </div>
+            <div class="language">
+                <h2>Swift</h2>
+                <p>Die Hauptsprache für die Entwicklung von iOS- und macOS-Apps.</p>
+            </div>
+            <div class="language">
+                <h2>Kotlin</h2>
+                <p>Eine moderne Sprache, die häufig für Android-Entwicklung genutzt wird.</p>
+            </div>
+            <div class="language">
+                <h2>PHP</h2>
+                <p>Eine serverseitige Sprache, die oft für die Entwicklung von dynamischen Webseiten verwendet wird.</p>
+            </div>
+            <div class="language">
+                <h2>C</h2>
+                <p>Eine der ältesten und grundlegendsten Programmiersprachen, oft als Grundlage für andere Sprachen
+                    verwendet.</p>
+            </div>
+            <div class="language">
+                <h2>TypeScript</h2>
+                <p>Eine Weiterentwicklung von JavaScript, die statische Typisierung bietet.</p>
+            </div>
+            <div class="language">
+                <h2>Scala</h2>
+                <p>Eine funktionale und objektorientierte Sprache, die auf der Java Virtual Machine läuft.</p>
+            </div>
+            <div class="language">
+                <h2>Haskell</h2>
+                <p>Eine rein funktionale Programmiersprache, die für ihre Ausdruckskraft und mathematische Präzision
+                    bekannt
+                    ist.</p>
+            </div>
+            <div class="language">
+                <h2>Perl</h2>
+                <p>Eine vielseitige Sprache, die oft für Textverarbeitung und Skripterstellung verwendet wird.</p>
+            </div>
+            <div class="language">
+                <h2>Lua</h2>
+                <p>Eine leichte, eingebettete Sprache, die oft in Spielen und Skripting eingesetzt wird.</p>
+            </div>
+            <div class="language">
+                <h2>R</h2>
+                <p>Eine Sprache, die speziell für statistische Berechnungen und Datenvisualisierung entwickelt wurde.
+                </p>
+            </div>
+            <div class="language">
+                <h2>Dart</h2>
+                <p>Eine Sprache von Google, die für die Entwicklung von Cross-Platform-Apps verwendet wird.</p>
+            </div>
+            <div class="language">
+                <h2>MATLAB</h2>
+                <p>Eine Sprache, die für numerische Berechnungen und Simulationen genutzt wird.</p>
+            </div>
+            <div class="language">
+                <h2>Assembly</h2>
+                <p>Eine Low-Level-Sprache, die direkt auf Maschinencode abzielt und eine präzise Steuerung der Hardware
+                    ermöglicht.</p>
+            </div>
+            <div class="language">
+                <h2>SQL</h2>
+                <p>Eine Sprache zur Verwaltung und Abfrage von Daten in relationalen Datenbanken.</p>
+            </div>
+            <div class="language">
+                <h2>Shell Script</h2>
+                <p>Eine Skriptsprache, die oft in Linux- und Unix-Umgebungen verwendet wird, um Aufgaben zu
+                    automatisieren.
+                </p>
+            </div>
+            <div class="language">
+                <h2>F#</h2>
+                <p>Eine funktionale Programmiersprache, die für die .NET-Plattform entwickelt wurde.</p>
+            </div>
+            <div class="language">
+                <h2>Clojure</h2>
+                <p>Eine funktionale Sprache, die auf der Java Virtual Machine läuft und Lisp-Syntax verwendet.</p>
+            </div>
+            <div class="language">
+                <h2>Visual Basic</h2>
+                <p>Eine einfache, ereignisgesteuerte Sprache, die für Windows-Anwendungen entwickelt wurde.</p>
+            </div>
+            <div class="language">
+                <h2>COBOL</h2>
+                <p>Eine ältere Sprache, die immer noch in Unternehmens- und Finanzsystemen verwendet wird.</p>
+            </div>
+        </main>
+
+        <!-- SIDEBAR STARTS HERE -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar__container">
+                <div class="sidebar__user">
+                    <div class="sidebar__img">
+                        <img src="../../../dashboard/assets/img/perfil.png" alt="image">
+                    </div>
+
+                    <div class="sidebar__info">
+                        <h3>User</h3>
+                        <span>User@email.com</span>
+                    </div>
+                </div>
+
+                <div class="sidebar__content">
+                    <div>
+                        <h3 class="sidebar__title">Sidebar</h3>
+
+                        <div class="sidebar__list">
+                            <a href="../../../dashboard/index.html" class="sidebar__link">
+                                <i class="ri-pie-chart-2-fill"></i>
+                                <span>Dashboard</span>
+                            </a>
+
+                            <a href="../github/index.html" class="sidebar__link">
+                                <i class="ri-wallet-3-fill"></i>
+                                <span>Github</span>
+                            </a>
+
+                            <a href="../faq/index.html" class="sidebar__link">
+                                <i class="ri-calendar-fill"></i>
+                                <span>FAQ</span>
+                            </a>
+
+                            <a href="#" class="sidebar__link active-link">
+                                <i class="ri-arrow-up-down-line"></i>
+                                <span>Programmiersprachen Überblick</span>
+                            </a>
+
+                            <a href="../../portfolio/index.html" class="sidebar__link">
+                                <i class="ri-arrow-up-down-line"></i>
+                                <span>Mein Portfolio</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar__actions">
+                    <button class="sidebar__link">
+                        <span>&copy; Till Siskos</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <footer>
+            <div class="sidebar__list">
+                <a href="../../../dashboard/index.html" class="sidebar__link">
+                    <i class="ri-pie-chart-2-fill"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="../github/index.html" class="sidebar__link">
+                    <i class="ri-wallet-3-fill"></i>
+                    <span>Github</span>
+                </a>
+
+                <a href="../faq/index.html" class="sidebar__link">
+                    <i class="ri-calendar-fill"></i>
+                    <span>FAQ</span>
+                </a>
+
+                <a href="#" class="sidebar__link active-link">
+                    <i class="ri-arrow-up-down-line"></i>
+                    <span>Programmiersprachen Überblick</span>
+                </a>
+            </div>
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <script src="script.js"></script>
+        <script src="assets/js/main.js"></script>
+</body>
+
+</html>
